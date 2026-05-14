@@ -1,0 +1,29 @@
+.destinations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    gap: 24px;
+    background-color: oklch(0.985 0.018 85);
+    border-radius: 12px;
+    min-height: 240px;
+    border: 0.8px solid oklch(0.86 0.025 75);
+}
+
+.destinations-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: oklch(0.28 0.04 40);
+    margin: 0;
+    font-style: italic;
+}
+
+.destinations-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: oklch(0.28 0.04 40);
+    margin: 0;
+}

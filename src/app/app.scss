@@ -1,0 +1,67 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: oklch(0.965 0.022 80);
+    gap: 24px;
+}
+
+.app-welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    gap: 24px;
+}
+
+.app-welcome-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: oklch(0.58 0.13 35);
+    margin: 0;
+    font-style: italic;
+}
+
+.app-welcome-title {
+    font-size: 64px;
+    font-weight: 600;
+    color: oklch(0.28 0.04 40);
+    margin: 0;
+}
+
+.app-welcome-title-highlight {
+    color: oklch(0.58 0.13 35);
+}
+
+.app-welcome-description {
+    font-size: 18px;
+    font-weight: 400;
+    color: oklch(0.28 0.04 40);
+    margin: 0;
+}
+
+.app-welcome-button {
+    background-color: oklch(0.58 0.13 35);
+    color: #fff;
+    border-radius: 24px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.app-my-trips-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: oklch(0.28 0.04 40);
+    margin-top: 24px;
+}

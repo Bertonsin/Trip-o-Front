@@ -1,0 +1,44 @@
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: oklch(0.965 0.022 80);
+    border-bottom: 0.8px solid oklch(0.86 0.025 75);
+    width: 100%;
+}
+
+.app-header-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.app-header-logo {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.app-header-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: oklch(0.28 0.04 40);
+}
+
+.app-header-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: oklch(0.28 0.04 40);
+    font-style: italic;
+}
+
+.app-header-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
