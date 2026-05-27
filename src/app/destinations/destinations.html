@@ -1,4 +1,7 @@
 <div class="destinations-container">
+    <ng-container *ngIf="destinations().length > 0">
+        <app-destinations-card-item *ngFor="let destination of destinations()" [destination]="destination"></app-destinations-card-item>
+    </ng-container>
     <span class="material-symbols-outlined" style="font-size: 48px;">
         map_search
         </span>

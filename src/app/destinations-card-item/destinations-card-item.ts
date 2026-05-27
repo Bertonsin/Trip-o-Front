@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-destinations-card-item',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './destinations-card-item.scss',
 })
 export class DestinationsCardItem {
-
+  @Input() destination: any;
 }
