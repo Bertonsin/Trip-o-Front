@@ -3,14 +3,17 @@ import { DestinationsCardItem } from './destinations-card-item/destinations-card
 import { AppHeader } from './app-header/app-header';
 import { Destinations } from './destinations/destinations';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+import { ButtonModule } from 'primeng/button';
+import { DialogModule } from 'primeng/dialog';
 
 @Component({
   selector: 'app-root',
-  imports: [DestinationsCardItem, AppHeader, Destinations],
+  imports: [DestinationsCardItem, AppHeader, Destinations, ButtonModule, DialogModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
+  isDialogVisible = signal(false);
   protected readonly title = signal('tripo-front');
 
 
@@ -22,4 +25,8 @@ export class App {
       image: 'https://via.placeholder.com/150'
     }
   ]
+
+  showDialog() {
+    this.isDialogVisible.update(prev => !prev);
+  }
 }

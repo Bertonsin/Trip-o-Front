@@ -4,11 +4,20 @@
     <h3 class="app-welcome-text">Olá viajante!</h3>
   <h2 class="app-welcome-title">Suas viagens, <br><span class="app-welcome-title-highlight">uma história de cada vez.</span></h2>
   <p class="app-welcome-description">Encontre as melhores experiências para cada destino e planeje sua próxima aventura.</p>
-  <button class="app-welcome-button"><span class="material-symbols-outlined">
+  <p-button (onClick)="showDialog()">
+    <span class="material-symbols-outlined">
     add
-    </span> Nova Viagem</button>
-
+    </span> 
+    Nova Viagem
+  </p-button>
   <h3 class="app-my-trips-title">Minhas Viagens</h3>
   <app-destinations></app-destinations>
   </div>
+  <p-dialog [visible]="isDialogVisible()" [modal]="true" [draggable]="false" [resizable]="false" [closable]="false" [dismissableMask]="true" [closeOnEscape]="true" [focusTrap]="true" [draggable]="false" [resizable]="false" [closable]="false" [dismissableMask]="true" [closeOnEscape]="true" [focusTrap]="true">
+    <h3>Nova Viagem</h3>
+    <p>Crie uma nova viagem para começar a planejar sua próxima aventura.</p>
+    <p-button (onClick)="isDialogVisible.set(false)" class="app-welcome-button"><span class="material-symbols-outlined">
+      add
+      </span> Fechar</p-button>
+  </p-dialog>
 </div>
