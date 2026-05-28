@@ -14,10 +14,6 @@
   <app-destinations></app-destinations>
   </div>
   <p-dialog [visible]="isDialogVisible()" [modal]="true" [draggable]="false" [resizable]="false" [closable]="false" [dismissableMask]="true" [closeOnEscape]="true" [focusTrap]="true" [draggable]="false" [resizable]="false" [closable]="false" [dismissableMask]="true" [closeOnEscape]="true" [focusTrap]="true">
-    <h3>Nova Viagem</h3>
-    <p>Crie uma nova viagem para começar a planejar sua próxima aventura.</p>
-    <p-button (onClick)="isDialogVisible.set(false)" class="app-welcome-button"><span class="material-symbols-outlined">
-      add
-      </span> Fechar</p-button>
-  </p-dialog>
+    <app-destination-creation-form (closeDialog)="showDialog()"></app-destination-creation-form>
+    </p-dialog>
 </div>

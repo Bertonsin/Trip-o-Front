@@ -5,17 +5,17 @@ import { Destinations } from './destinations/destinations';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ButtonModule } from 'primeng/button';
 import { DialogModule } from 'primeng/dialog';
+import { DestinationCreationForm } from './destination-creation-form/destination-creation-form';
 
 @Component({
   selector: 'app-root',
-  imports: [DestinationsCardItem, AppHeader, Destinations, ButtonModule, DialogModule],
+  imports: [DestinationsCardItem, AppHeader, Destinations, ButtonModule, DialogModule, DestinationCreationForm],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
   isDialogVisible = signal(false);
   protected readonly title = signal('tripo-front');
-
 
   destinations = [
     {

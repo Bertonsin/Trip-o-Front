@@ -44,6 +44,20 @@ export const preset = definePreset(Aura,{
                     }
                 }
             }
+        },
+        inputtext:{
+            colorScheme:{
+                light:{
+                    root:{
+                        borderRadius: '12px !important',
+                        paddingX: '20px !important',
+                        paddingY: '16px !important',
+                        background: 'oklch(0.965 0.022 80) !important',
+                        borderColor: 'oklch(0.86 0.025 75) !important',
+                        color: 'oklch(0.28 0.04 40) !important',
+                    }
+                }
+            }
         }
     },
 });

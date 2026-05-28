@@ -1,0 +1,15 @@
+.destination-creation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+h3, p {
+    padding: 0;
+    margin: 0;
+}
+
+.destination-creation-form-buttons {
+    display: flex;
+    gap: 16px;
+}

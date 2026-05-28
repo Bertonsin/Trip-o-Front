@@ -1,0 +1,9 @@
+<div class="destination-creation-form">
+    <h3>Nova Viagem</h3>
+    <p>Crie uma nova viagem para começar a planejar sua próxima aventura.</p>
+    <input type="text" [(ngModel)]="destinationName" pInputText placeholder="Nome da viagem" />
+    <div class="destination-creation-form-buttons">
+        <p-button (onClick)="closeDialog.emit()">Cancelar</p-button> 
+        <p-button (onClick)="createDestination()">Criar Viagem</p-button>
+    </div>
+</div>
